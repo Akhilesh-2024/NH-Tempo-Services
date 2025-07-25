@@ -1,0 +1,72 @@
+@media print {
+  * {
+    color: black !important;
+    background-color: white !important;
+    -webkit-print-color-adjust: exact;
+    box-shadow: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-header {
+    background: linear-gradient(135deg, #1e40af, #3b82f6) !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print-section {
+    border: 2px solid #333 !important;
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+    background: white !important;
+  }
+
+  .print-content {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .text-blue-600, .text-orange-600, .text-green-600, .text-yellow-300 {
+    color: #333 !important;
+  }
+
+  .bg-blue-100, .bg-green-100, .bg-red-100, .bg-orange-100 {
+    background-color: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .text-blue-800, .text-green-800, .text-red-700, .text-orange-900 {
+    color: #333 !important;
+  }
+
+  /* Make sure borders show in print */
+  .border-2, .border-b, .border-t-2 {
+    border-color: #333 !important;
+  }
+
+  .border-dashed {
+    border-style: dashed !important;
+    border-color: #666 !important;
+  }
+
+  /* Ensure proper spacing in print */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > div {
+    margin-bottom: 10px;
+  }
+
+  /* Page breaks */
+  .print-page-break {
+    page-break-before: always;
+  }
+}
